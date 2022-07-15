@@ -14,6 +14,16 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <style>
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        }
+    </style>
 </head>
 <body>
 <div class="sidebar sidebar-light sidebar-fixed" id="sidebar">

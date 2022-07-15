@@ -3,21 +3,20 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="card mb-4">
-        <div class="card-header">
-            {{ __('Users') }}
-            <a class="btn btn-success float-end" href="{{ route('users.create') }}"> Create New User</a>
+    <div class="mb-4">
+        <div class="">
+            <h1>Manajemen Pengguna</h1>
+            <a class="btn btn-info float-end" href="{{ route('users.create') }}">Tambah Pengguna</a>
         </div>
 
         <div class="card-body">
-
             @if ($message = Session::get('success'))
                 <div class="alert alert-success">
                     <p>{{ $message }}</p>
                 </div>
             @endif
 
-            <table class="table table-bordered table-sm">
+            <table class="table table-bordered table-sm styled-table">
                 <tr>
                     <th>No</th>
                     <th>Name</th>
