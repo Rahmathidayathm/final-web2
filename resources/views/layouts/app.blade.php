@@ -12,6 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
     <link href="https://cdn.datatables.net/v/bs4/dt-1.11.3/datatables.min.css" rel="stylesheet" />
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <style>
@@ -27,8 +30,8 @@
 </head>
 <body>
 <div class="sidebar sidebar-light sidebar-fixed" id="sidebar">
-    <div class="sidebar-brand d-none d-md-flex">
-        Final WEB 2
+    <div class="sidebar-brand d-none d-md-flex" style="background: #000;">
+        <h2 style="font-family: 'Viga', sans-serif;">MNJ WEB</h2>
     </div>
     @include('layouts.navigation')
     <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>

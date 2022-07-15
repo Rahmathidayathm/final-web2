@@ -1,37 +1,29 @@
-<ul class="sidebar-nav" data-coreui="navigation" data-simplebar>
+<ul class="sidebar-nav" style="background-color: lightgrey;" data-coreui="navigation" data-simplebar>
     @auth
     <li class="nav-item">
         <a class="nav-link" href="{{ route('home') }}">
-            <svg class="nav-icon">
-                <use xlink:href="{{ asset('icons/coreui.svg#cil-speedometer') }}"></use>
-            </svg>
-            Dashboard
+            <img src="{{ asset('icons/home.png') }}" width="25" style="margin-right: 20px;" alt="">
+            Tampilan Utama
         </a>
     </li>
 
         <li class="nav-item">
             <a class="nav-link" href="{{ route('users.index') }}">
-                <svg class="nav-icon">
-                    <use xlink:href="{{ asset('icons/coreui.svg#cil-user') }}"></use>
-                </svg>
+                <img src="{{ asset('icons/user.png') }}" width="25" style="margin-right: 20px;" alt="">
                 Pengguna
             </a>
         </li>
 
         <li class="nav-item">
             <a class="nav-link" href="{{ route('roles.index') }}">
-                <svg class="nav-icon">
-                    <use xlink:href="{{ asset('icons/coreui.svg#cil-group') }}"></use>
-                </svg>
+                <img src="{{ asset('icons/group.png') }}" width="25" style="margin-right: 20px;" alt="">
                 Roles
             </a>
         </li>
 
         <li class="nav-item">
             <a class="nav-link" href="{{ route('clients.index') }}">
-                <svg class="nav-icon">
-                    <use xlink:href="{{ asset('icons/coreui.svg#cil-user') }}"></use>
-                </svg>
+                <img src="{{ asset('icons/target.png') }}" width="25" style="margin-right: 20px;" alt="">
                 Klien
             </a>
         </li>
