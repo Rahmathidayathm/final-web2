@@ -2,12 +2,10 @@
 
 @section('content')
 
-    <div class="card mb-4">
-        <div class="card-header">
-            {{ __('Roles') }}
-            @can('role-create')
-                <a class="btn btn-success float-end" href="{{ route('roles.create') }}"> Create New Role</a>
-            @endcan
+    <div>
+        <div>
+            <h1>Roles</h1>
+            <a class="btn btn-info float-end" href="{{ route('roles.create') }}">Buat Role Baru </a>
         </div>
 
         <div class="card-body">
@@ -17,7 +15,7 @@
                 </div>
             @endif
 
-            <table class="table table-bordered table-sm">
+            <table class="table table-bordered table-sm styled-table">
                 <tr>
                     <th>No</th>
                     <th>Name</th>

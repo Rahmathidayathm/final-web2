@@ -19,7 +19,7 @@
             <table class="table table-bordered table-sm styled-table">
                 <tr>
                     <th>No</th>
-                    <th>Name</th>
+                    <th>Nama</th>
                     <th>Email</th>
                     <th>Roles</th>
                     <th width="280px">Action</th>
