@@ -92,7 +92,7 @@
         </form>
     </main>
     <footer>
-        <p>Desenvolvido por <a href="#">JM_Code&trade;</a></p>
+        <p>Projek Final</p>
     </footer>
 </body>
 @endsection

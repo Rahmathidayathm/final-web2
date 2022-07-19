@@ -5,7 +5,7 @@
 @section('content')
     <div class="mb-4">
         <div class="">
-            <h1>Manajemen Pengguna</h1>
+            <h1>Info Team</h1>
             <a class="btn btn-info float-end" href="{{ route('users.create') }}">Tambah Pengguna</a>
         </div>
 

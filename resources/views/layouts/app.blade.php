@@ -52,6 +52,16 @@
             </a>
             <ul class="header-nav d-none d-md-flex">
                 <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Dashboard</a></li>
+                <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                               onclick="event.preventDefault(); this.closest('form').submit();">
+                                <svg class="icon me-2">
+                                    <use xlink:href="{{ asset('icons/coreui.svg#cil-account-logout') }}"></use>
+                                </svg>
+                                {{ __('Logout') }}
+                            </a>
+                        </form>
             </ul>
             <ul class="header-nav ms-auto">
 

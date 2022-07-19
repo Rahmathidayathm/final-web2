@@ -1,33 +1,33 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="card mb-4">
-        <div class="card-header">
+    <div class="mb-4">
+        <div
             {{ __('Show User') }}
             <a class="btn btn-primary float-end" href="{{ route('users.index') }}"> Back</a>
         </div>
 
-        <div class="card-body">
+        <div>
 
             <div class="row">
 
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Name:</strong>
+                        <strong>Nama</strong> <br>
                         {{ $user->name }}
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Email:</strong>
+                        <strong>Email</strong> <br>
                         {{ $user->email }}
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Roles:</strong>
+                        <strong>Roles </strong> <br>
                         @if(!empty($user->getRoleNames()))
                             @foreach($user->getRoleNames() as $v)
                                 <label class="badge me-1 bg-success">{{ $v }}</label>
@@ -39,7 +39,7 @@
 
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <div class="form-group">
-                        <strong>Bio:</strong>
+                        <strong>Biodata</strong> <br>
                         {{ $user->biodata }}
                     </div>
 

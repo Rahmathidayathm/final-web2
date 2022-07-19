@@ -14,7 +14,7 @@
             </a>
         </li>
 
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a class="nav-link" href="{{ route('roles.index') }}">
                 <img src="{{ asset('icons/group.png') }}" width="25" style="margin-right: 20px;" alt="">
                 Roles
@@ -26,7 +26,7 @@
                 <img src="{{ asset('icons/target.png') }}" width="25" style="margin-right: 20px;" alt="">
                 Klien
             </a>
-        </li>
+        </li> -->
 
 {{--        <li><a class="nav-link" href="{{ route('users.index') }}">Manage Users</a></li>--}}
 
