@@ -109,7 +109,7 @@
             @yield('content')
         </div>
     </div>
-    <footer class="footer" style="text-align: center;">
+    <footer class="footer" style="text-align:center;" position="fixed">
         <div> <a href="#">MNJ Web</a>  &copy; 2022
         </div>
     </footer>
